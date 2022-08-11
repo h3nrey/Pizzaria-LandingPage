@@ -1,44 +1,51 @@
 <template>
   <div
-    class="home before:absolute before:bg-home before:top-0 before:left-0 before:h-[100vh] before:w-[100vh] before:bg-center before:bg-cover before:z-[-1] before:brightness-50"
+    class="home before:absolute before:bg-home before:top-0 before:left-0 before:h-[100vh] before:w-[100vw] before:bg-center before:bg-cover before:z-[-1] before:brightness-50"
   >
-    <main class="flex flex-col align-center">
+    <main class="flex flex-col align-center w-[100vw]">
       <section
         id="mainInfos"
-        class="text-white flex flex-col align-center gap-16 p-6"
+        class="text-white flex flex-col align-center gap-16 px-6 pb-10 md:pb-[10rem]"
       >
         <div
           id="restaurant__description"
           class="gap-6 flex flex-col align-center"
         >
           <h1
-            class="text-[3.5rem] font-title font-bold uppercase leading-[1] text-center overflow-hidden"
+            class="text-[3.5rem] font-title font-bold uppercase leading-[1] text-center overflow-hidden md:text-8xl"
           >
             authentic italian pizzaria
           </h1>
-          <p class="text-[1rem] font-semibold text-center">
+          <p class="text-[1rem] font-semibold text-center px-[20%]">
             Et praesent nulla urna consequat dui arcu cursus diam fringilla
             libero risus, aliquam diam, aliquam ullamcorper urna pulvinar velit
             suspendisse aliquam lacus sollicitudin mauris.
           </p>
         </div>
 
-        <div id="restaurant__buttons" class="flex flex-col align-center gap-4">
+        <div
+          id="restaurant__buttons"
+          class="flex flex-col align-center gap-4 md:flex-row md:px-[28rem]"
+        >
           <OutlineButton buttonTxt="book a table" class="bg-red outline-red" />
-          <OutlineButton buttonTxt="TakeAway" class="bg-white outline-white" />
+          <OutlineButton
+            buttonTxt="TakeAway"
+            class="bg-white outline-white text-white hover:text-black"
+          />
         </div>
-
-        <div class="relative h-[9rem]">
-          <img src="../assets/circlePizza.png" alt="" class="w-[18rem] h-[18rem] absolute translate-y-5 top-0 left-[50%] translate-x-[-50%]"/>
-        </div>
-        
       </section>
-      <section id="ourdifferential" class="bg-white px-6 py-10">
-        <div class="diferential__grid grid grid-rows-3 text-center gap-10">
+      <section
+        id="ourdifferential"
+        class="bg-gray px-6 py-10 md:py-[11.25rem] md:px-20"
+      >
+        <div
+          class="diferential__grid grid grid-rows-[1fr 1fr 1fr] text-center gap-10 md:grid-cols-3"
+        >
           <div
             class="diferential__item flex flex-col items-center gap-4"
             v-for="(diff, index) in differentials"
             :key="index"
+            :class="{ central__grid__element: index === 1 }"
           >
             <div
               :src="diff.image"
@@ -47,7 +54,7 @@
               :class="diff.class"
             ></div>
             <h2
-              class="differential__title text-red text-2xl leading-[1] font-title uppercase font-bold"
+              class="differential__title text-red text-2xl leading-[1] font-title uppercase font-bold md:text-[2rem]"
             >
               {{ diff.title }}
             </h2>
@@ -217,45 +224,15 @@
         </div>
       </section>
     </main>
-    <footer
-      class="bg-gray flex flex-col items-center text-center py-10 px-6 gap-6"
-    >
-      <Logo />
-      <p class="font-text text[1rem] text-black">
-        Vivamus convallis fermen sollicitudin et, vitae <br> elit in vel ultrices sed
-        in urna ipsum ullamcorper auctor.
-      </p>
-
-      <div name="social__row" class="flex gap-4">
-        <a href="https://vuejs.org">
-          <ph-instagram-logo :size="32" weight="fill" class="text-red" />
-        </a>
-        <a href="https://vuejs.org">
-          <ph-youtube-logo :size="32" weight="fill" class="text-red" />
-        </a>
-        <a href="https://vuejs.org">
-          <ph-facebook-logo :size="32" weight="fill" class="text-red" />
-        </a>
-      </div>
-
-      <section v-for="(section, index) in footerSections" :key="index">
-        <h2 class="font-title text-black uppercase font-bold text-2xl">
-          {{ section.title }}
-        </h2>
-        <div class="flex flex-col">
-          <router-link
-            to="/ourmenu"
-            class="font-text text-black text-base font-light capitalize underline"
-            v-for="(link, index) in section.sections"
-            :key="index"
-            >{{ link }}</router-link
-          >
-        </div>
-      </section>
-        <span class="text-black mt-6 font-text">made by <a href="https://github.com/h3nrey" class="font-semibold" target="_blank">Pedro</a></span>
-    </footer>
+    <FooterComponent />
   </div>
 </template>
+
+<style scoped>
+.central__grid__element {
+  transform: translateY(25%);
+}
+</style>
 
 <script>
 import OutlineButton from "@/components/OutlineButton.vue";
@@ -271,6 +248,7 @@ import MobileIcon from "../components/icons/MobileIcon.vue";
 import HorizontalDeal from "@/components/HorizontalDeal.vue";
 import LocationContainer from "@/components/LocationContainer.vue";
 import Logo from "@/components/Logo.vue";
+import FooterComponent from "../components/footerComponent.vue";
 
 export default {
   name: "HomeView",
@@ -286,6 +264,7 @@ export default {
     HorizontalDeal,
     LocationContainer,
     Logo,
+    FooterComponent,
   },
   data() {
     return {
@@ -327,30 +306,6 @@ export default {
         },
       ],
       flavors: [{ title: "pasta" }, { title: "pizza" }, { title: "dessert" }],
-      footerSections: [
-        {
-          title: "about us",
-          sections: [
-            "our story",
-            "our location",
-            "current deals",
-            "contact us",
-          ],
-        },
-        {
-          title: "our menu",
-          sections: ["pizza", "pasta", "dessert", "take & bake"],
-        },
-        {
-          title: "our location",
-          sections: [
-            "the pizzeria rome",
-            "the pizzeria florence",
-            "the pizzeria bologna",
-            "the pizzeria venice",
-          ],
-        },
-      ],
     };
   },
 };

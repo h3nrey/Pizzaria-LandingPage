@@ -1,6 +1,7 @@
 <script setup>
 import { PhX } from "phosphor-vue";
 import { defineProps } from "vue";
+import NavWrapper from "./NavWrapper.vue";
 
 const props = defineProps({
   show: Boolean,
@@ -25,17 +26,7 @@ const links = [
       <button class="w-full flex justify-end" @click="$emit('close')">
         <PhX size="40" class="text-white" weight="bold" />
       </button>
-      <div class="h-full flex flex-col items-center justify-center gap-10">
-        <router-link
-        v-for="(link, index) in links"
-        :to="link.anchor"
-        class="text-white font-mont font-semibold text-4xl"
-        :key="index"
-        @click="$emit('close')"
-        >{{ link.text }}</router-link
-      >
-      </div>
-      
+      <NavWrapper />
     </div>
   </Transition>
 </template>
