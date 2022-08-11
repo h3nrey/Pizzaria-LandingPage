@@ -27,6 +27,11 @@
           <OutlineButton buttonTxt="book a table" class="bg-red outline-red" />
           <OutlineButton buttonTxt="TakeAway" class="bg-white outline-white" />
         </div>
+
+        <div class="relative h-[9rem]">
+          <img src="../assets/circlePizza.png" alt="" class="w-[18rem] h-[18rem] absolute translate-y-5 top-0 left-[50%] translate-x-[-50%]"/>
+        </div>
+        
       </section>
       <section id="ourdifferential" class="bg-white px-6 py-10">
         <div class="diferential__grid grid grid-rows-3 text-center gap-10">
@@ -54,7 +59,7 @@
       </section>
       <section
         id="ourservices"
-        class="px-6 py-10 bg-black text-center text-white flex flex-col items-center gap-16"
+        class="px-6 py-10 bg-singleSlicePizza brightness-50 text-center text-white flex flex-col items-center gap-16"
       >
         <div class="section__text flex flex-col items-center gap-4">
           <h2 class="font-title font-bold text-[2.5rem] text-center">

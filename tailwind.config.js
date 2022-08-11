@@ -19,6 +19,7 @@ module.exports = {
     backgroundImage: {
       home: "url('/src/assets/cuttedPizzaSpacedHome.jpg')",
       circlePizza: "url('/src/assets/circlePizza.png')",
+      singleSlicePizza: "url('/src/assets/singleSlicePizzaDarkBg.jpg')"
     },
   },
   plugins: [],
