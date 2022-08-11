@@ -1,6 +1,6 @@
 <script setup>
-  import OutlineButton from '../OutlineButton.vue';
-  import HorizontalDeal from '../HorizontalDeal.vue';
+import OutlineButton from "../OutlineButton.vue";
+import HorizontalDeal from "../HorizontalDeal.vue";
 </script>
 
 <template>
@@ -35,9 +35,7 @@
           <p class="font-text text-white capitalize font-bold">
             Tellus id nisl quis at sollicitudin nisl nisi tincidunt purus .
           </p>
-          <span class="font-title text-white text-[3.5rem] font-bold"
-            >$18</span
-          >
+          <span class="font-title text-white text-[3.5rem] font-bold">$18</span>
         </div>
       </div>
       <HorizontalDeal
@@ -55,5 +53,5 @@
         dealBeforeColor="before:bg-yellow"
       />
     </div>
-  </section>    
+  </section>
 </template>
