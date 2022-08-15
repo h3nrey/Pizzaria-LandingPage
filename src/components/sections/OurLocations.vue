@@ -24,26 +24,30 @@ const locations = [
 <template>
   <section
     id="ourlocations"
-    class="bg-red text-white flex flex-col items-center gap-6 text-center py-10 px-6"
+    class="bg-red text-white flex flex-col items-center md:gap-10 text-center p-20"
   >
     <div name="section__info" class="flex flex-col items-center">
       <h2 class="font-bold font-title text-yellow text-[1rem] uppercase">
         our location
       </h2>
-      <p class="uppercase font-title font-bold text-[2.5rem]">
+      <p class="uppercase font-title font-bold text-[2.5rem] md:text-[4rem]">
         FIND THE PIZZERIA NEAR YOU
       </p>
-      <p class="font-text text-sm">
+      <p class="font-text text-sm md:max-w-[65%]">
         Cursus ultricies in maecenas pulvinar ultrices integer quam amet, semper
         dictumst sit interdum ut venenatis pellentesque.
       </p>
     </div>
 
-    <div name="locations__grid" class="grid grid-rows-4 gap-6">
+    <div
+      name="locations__grid"
+      class="locations__grid grid grid-rows-4 gap-6 md:grid-cols-4 md:grid-rows-1"
+    >
       <LocationContainer
-        v-for="location in locations"
+        v-for="(location, index) in locations"
         :locationTitle="location.title"
         :locationDesc="location.desc"
+        :key="index"
       />
     </div>
   </section>

@@ -3,18 +3,18 @@ import { PhX } from "phosphor-vue";
 import { defineProps } from "vue";
 import NavWrapper from "./NavWrapper.vue";
 
+defineEmits(["close"]);
+
 const props = defineProps({
   show: Boolean,
 });
 
-console.log(props);
+function close() {
+  $emit("close");
+  console.log("testing links close");
+}
 
-const links = [
-  { anchor: "/", text: "Home" },
-  { anchor: "/ourmenu", text: "OurMenu" },
-  { anchor: "/contact", text: "Contact" },
-  { anchor: "/aboutus", text: "AboutUs" },
-];
+console.log(props);
 </script>
 
 <template>
@@ -26,7 +26,7 @@ const links = [
       <button class="w-full flex justify-end" @click="$emit('close')">
         <PhX size="40" class="text-white" weight="bold" />
       </button>
-      <NavWrapper />
+      <NavWrapper @close="$emit('close')" />
     </div>
   </Transition>
 </template>

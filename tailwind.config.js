@@ -20,6 +20,9 @@ module.exports = {
       home: "url('/src/assets/cuttedPizzaSpacedHome.jpg')",
       circlePizza: "url('/src/assets/circlePizza.png')",
       singleSlicePizza: "url('/src/assets/singleSlicePizzaDarkBg.jpg')",
+      pizzaOverflow: "url('/src/assets/pizzaFilligOverflowing.jpg')",
+      dessert: "url('/src/assets/dessert.jpg')",
+      pastaPlate: "url('/src/assets/pastaPlate.jpg')"
     },
     screens: {
       sm: "350px",

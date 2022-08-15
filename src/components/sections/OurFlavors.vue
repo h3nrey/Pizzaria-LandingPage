@@ -25,7 +25,10 @@ const flavors = [{ title: "pasta" }, { title: "pizza" }, { title: "dessert" }];
       buttonTxt="view all menu"
       class="outline-2 outline-red outline bg-red text-red w-48"
     />
-    <div name="flavor__grid" class="grid grid-row-3 gap-6 items-center">
+    <div
+      name="flavor__grid"
+      class="grid grid-row-3 gap-6 items-center md:grid-rows-1 md:grid-cols-3 md:gap-20"
+    >
       <div name="flavor" v-for="(flavor, index) in flavors" :key="index">
         <div
           class="bg-circlePizza rounded-full w-[13.5rem] h-[13.5rem] bg-center bg-contain"

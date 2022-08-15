@@ -1,10 +1,31 @@
 <script setup>
+import PizzaIcon from "@/components/icons/PizzaIcon.vue";
+import PackageIcon from "@/components/icons/PackageIcon.vue";
+import MobileIcon from "@/components/icons/MobileIcon.vue";
+import { PhArrowRight } from "phosphor-vue";
+const services = [
+  {
+    icon: MobileIcon,
+    title: "online delivery",
+    buttonTxt: "order online",
+  },
+  {
+    icon: PackageIcon,
+    title: "click & collect",
+    buttonTxt: "takeout order",
+  },
+  {
+    icon: PizzaIcon,
+    title: "restaurant dinning",
+    buttonTxt: "book a table",
+  },
+];
 </script>
 
 <template>
   <section
     id="ourservices"
-    class="px-6 py-10 bg-singleSlicePizza brightness-50 text-center text-white flex flex-col items-center gap-16"
+    class="px-6 py-10 bg-singleSlicePizza text-center text-white flex flex-col items-center gap-16"
   >
     <div class="section__text flex flex-col items-center gap-4">
       <h2 class="font-title font-bold text-[2.5rem] text-center">
