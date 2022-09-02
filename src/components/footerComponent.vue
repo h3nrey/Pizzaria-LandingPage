@@ -25,13 +25,13 @@ const footerSections = [
 
 <template>
   <footer
-    class="bg-gray flex flex-col items-center text-center py-10 px-6 gap-6 md:items-start md:px-20"
+    class="bg-gray flex flex-col items-center text-center py-10 px-6 gap-6 md:items-start md:px-20 w-[100vw]"
   >
     <div
       class="flex flex-col items-center gap-8 md:flex md:flex-row md:justify-between md:w-full"
     >
       <div
-        class="flex flex-col items-center gap-6 md:flex-col md:flex md:gap-6"
+        class="flex flex-col items-center gap-6 md:flex-col md:flex md:gap-6 md:items-start"
       >
         <Logo />
         <div name="social__row" class="flex gap-4">
@@ -53,11 +53,13 @@ const footerSections = [
         </p>
       </div>
 
-      <div class="md:flex-row md:flex md:gap-20">
+      <div
+        class="md:flex-row md:flex md:gap-20 gap-6 flex-col flex items-center"
+      >
         <section
           v-for="(section, index) in footerSections"
           :key="index"
-          class="md:flex-col md:flex md:gap-9 md:underline-offset-0"
+          class="md:flex-col md:flex md:gap-9 md:underline-offset-0 gap-2 flex-col flex items-center"
         >
           <h2 class="font-title text-black uppercase font-bold text-2xl">
             {{ section.title }}

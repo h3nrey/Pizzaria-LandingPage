@@ -3,14 +3,11 @@ import { PhX } from "phosphor-vue";
 import { defineProps } from "vue";
 import NavWrapper from "./NavWrapper.vue";
 
-defineEmits(["close"]);
-
 const props = defineProps({
   show: Boolean,
 });
 
 function close() {
-  $emit("close");
   console.log("testing links close");
 }
 

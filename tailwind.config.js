@@ -9,6 +9,7 @@ module.exports = {
       white: "#F7F6F2",
       gray: "#EBEBEB",
       black: "#1E1E1E",
+      darkGray: "#4A4A4A",
     },
     fontFamily: {
       logo: "Caveat",
@@ -22,7 +23,8 @@ module.exports = {
       singleSlicePizza: "url('/src/assets/singleSlicePizzaDarkBg.jpg')",
       pizzaOverflow: "url('/src/assets/pizzaFilligOverflowing.jpg')",
       dessert: "url('/src/assets/dessert.jpg')",
-      pastaPlate: "url('/src/assets/pastaPlate.jpg')"
+      pastaPlate: "url('/src/assets/pastaPlate.jpg')",
+      outdoorRestaurant: "url('/src/assets/outdoorRestaurant.jpg')",
     },
     screens: {
       sm: "350px",
@@ -33,6 +35,16 @@ module.exports = {
 
       lg: "1440px",
       // => @media (min-width: 1440px) { ... }
+    },
+    keyframes: {
+      showingDown: {
+        "0%, 100%": { transform: "translateY(100%)" },
+        "50%": { transform: "translateY(50%)" },
+      },
+      showingRight: {
+        "0%, 100%": { transform: "translateX(50%)" },
+        "50%": { transform: "translateX(0%)" },
+      },
     },
   },
   plugins: [],

@@ -24,7 +24,7 @@ const differentials = [
 <template>
   <section
     id="ourdifferential"
-    class="bg-gray px-6 py-10 md:py-[11.25rem] md:px-20 w-full"
+    class="bg-gray px-6 py-10 md:py-[11.25rem] md:pt-[10rem] md:px-20 w-full"
   >
     <div
       class="diferential__grid grid grid-rows-[1fr 1fr 1fr] text-center gap-10 md:grid-cols-3"

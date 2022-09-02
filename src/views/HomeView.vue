@@ -9,9 +9,9 @@
       >
         <div
           id="restaurant__description"
-          class="gap-6 flex flex-col align-center"
+          class="gap-6 flex flex-col align-center pt-10"
         >
-          <ViewTitle title="authentic  italian pizzaria"  />
+          <ViewTitle title="authentic  italian pizzaria" />
           <p class="text-[1rem] font-semibold text-center md:px-[20%]">
             Et praesent nulla urna consequat dui arcu cursus diam fringilla
             libero risus, aliquam diam, aliquam ullamcorper urna pulvinar velit
@@ -37,7 +37,6 @@
       <BestDeals />
       <OurLocations />
     </main>
-    <FooterComponent />
   </div>
 </template>
 
@@ -49,7 +48,6 @@
 
 <script>
 import OutlineButton from "@/components/OutlineButton.vue";
-import FooterComponent from "../components/footerComponent.vue";
 import OurLocations from "@/components/sections/OurLocations.vue";
 import BestDeals from "@/components/sections/BestDeals.vue";
 import OurFlavors from "@/components/sections/OurFlavors.vue";
@@ -61,7 +59,6 @@ export default {
   name: "HomeView",
   components: {
     OutlineButton,
-    FooterComponent,
     OurLocations,
     BestDeals,
     OurFlavors,

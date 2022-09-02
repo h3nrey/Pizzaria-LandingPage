@@ -5,9 +5,13 @@
     <router-link
       v-for="(link, index) in links"
       :to="link.anchor"
-      class="nav__link text-white font-mont font-semibold text-4xl md:text-base md:font-text md:font-normal md:hover:before:w-full md:before:bg-red"
+      class="nav__link text-white font-mont font-semibold text-4xl md:text-base md:font-text md:font-normal md:hover:before:w-[120%] md:before:bg-red"
+      :class="{ active: link.activePage == true }"
       :key="index"
-      @click="$emit('close')"
+      @click="
+        $emit('close');
+        toggleActive(index);
+      "
       >{{ link.text }}</router-link
     >
   </div>
@@ -26,15 +30,31 @@
   top: 70%;
   position: absolute;
   height: 0.5rem;
+  background-color: #fa0c3b;
   width: 0;
+}
+
+.nav__link.active::before {
+  width: 120%;
 }
 </style>
 
 <script setup>
-const links = [
-  { anchor: "/", text: "Home" },
-  { anchor: "/ourmenu", text: "OurMenu" },
-  { anchor: "/contact", text: "Contact" },
-  { anchor: "/aboutus", text: "AboutUs" },
-];
+import { ref, reactive } from "vue";
+let links = reactive([
+  { anchor: "/", text: "Home", activePage: true },
+  { anchor: "/ourmenu", text: "OurMenu", activePage: false },
+  { anchor: "/contact", text: "Contact", activePage: false },
+  { anchor: "/aboutus", text: "AboutUs", activePage: false },
+]);
+
+function toggleActive(key) {
+  links.forEach((link, index) => {
+    if (index !== key) {
+      link.activePage = false;
+    }
+  });
+  links[key].activePage = true;
+  console.log(links[key].activePage);
+}
 </script>
