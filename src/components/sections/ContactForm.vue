@@ -14,7 +14,7 @@
           <label for="firstname">first</label>
           </div>
           <div class="flex flex-col">
-            <input name="" type="text" id="lastname" class=" bg-gray visited:outline-darkGray rounded-sm p-[0.7rem]" placeholder="first">
+            <input name="from_lastname" type="text" id="lastname" class=" bg-gray visited:outline-darkGray rounded-sm p-[0.7rem]" placeholder="first">
             <label for="lastname">last</label>
           </div>
         </div>
