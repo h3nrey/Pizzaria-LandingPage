@@ -56,9 +56,7 @@
 </style>
 
 <script setup>
-import PhIcon from "./icons/PhIcon.vue";
-import PhoneIcon from "./icons/PhoneIcon.vue";
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 
 const props = defineProps({
   infoText: String,

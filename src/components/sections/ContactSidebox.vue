@@ -1,7 +1,11 @@
 <template>
-  <div class="flex flex-col bg-gray px-6 py-12 gap-6">
+  <div
+    class="flex flex-col bg-white px-6 py-12 gap-6 rounded-l-2xl md:py-[3rem] md:px-10"
+  >
     <div id="corporateoffice_container" class="gap-4 flex flex-col">
-      <h2 class="uppercase font-title text-black font-bold text-[1.75rem]">
+      <h2
+        class="uppercase font-title text-black font-bold text-[1.75rem] md:text-[2.5rem]"
+      >
         Corporate Office
       </h2>
       <div class="flex flex-col gap-6">
@@ -45,14 +49,13 @@
     </div>
 
     <div id="corporateoffice_container" class="gap-4 flex flex-col">
-      <h2 class="uppercase font-title text-black font-medium  text-[1.375rem]">
+      <h2 class="uppercase font-title text-black font-medium text-[1.375rem]">
         stay connected
       </h2>
       <div class="flex gap-6">
-        <TwitterIcon size="20" class="text-red"/>
-        <InstagramIcon size="20" class="text-red"/>
-        <YoutubeLogo size="20" class="text-red"/>
-
+        <TwitterIcon size="20" class="text-red" />
+        <InstagramIcon size="20" class="text-red" />
+        <YoutubeLogo size="20" class="text-red" />
       </div>
     </div>
   </div>

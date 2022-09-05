@@ -40,7 +40,7 @@
 </style>
 
 <script setup>
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 let links = reactive([
   { anchor: "/", text: "Home", activePage: true },
   { anchor: "/ourmenu", text: "OurMenu", activePage: false },

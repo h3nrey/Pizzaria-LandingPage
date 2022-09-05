@@ -5,7 +5,7 @@ const props = defineProps({
   size: String,
 });
 
-console.log();
+console.log(props);
 </script>
 <template>
   <ph-map-pin :size="size" weight="fill" />

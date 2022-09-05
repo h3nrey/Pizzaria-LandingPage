@@ -5,7 +5,7 @@ const props = defineProps({
   size: String,
 });
 
-console.log();
+console.log(props);
 </script>
 <template>
   <ph-caret-down :size="size" weight="fill" />

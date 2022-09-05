@@ -213,9 +213,8 @@ const menu = [
             >
               {{ step.stepDesc }}
             </p>
-
             <div
-              v-if="step.hasToppings"
+              v-show="step.hasToppings"
               v-for="(type, index) in step.toppingTypes"
               :key="index"
               class="gap-4 flex flex-col"

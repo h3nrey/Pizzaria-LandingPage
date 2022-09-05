@@ -7,10 +7,6 @@ const props = defineProps({
   show: Boolean,
 });
 
-function close() {
-  console.log("testing links close");
-}
-
 console.log(props);
 </script>
 
