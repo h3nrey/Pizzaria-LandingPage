@@ -25,6 +25,9 @@ module.exports = {
       dessert: "url('/src/assets/dessert.jpg')",
       pastaPlate: "url('/src/assets/pastaPlate.jpg')",
       outdoorRestaurant: "url('/src/assets/outdoorRestaurant.jpg')",
+      history: "url('/src/assets/history.jpg')",
+      founder: "url('/src/assets/founder.jpg')",
+      firstLocal: "url('/src/assets/firstRestaurant.jpg')"
     },
     screens: {
       sm: "350px",

@@ -108,10 +108,7 @@
                 class="field appearance-none w-full cursor-pointer"
                 required
               >
-                <option
-                  selected disabled
-                  class="text-darkGray font-semibold"
-                >
+                <option selected disabled class="text-darkGray font-semibold">
                   Select a Restaurant
                 </option>
                 <option
