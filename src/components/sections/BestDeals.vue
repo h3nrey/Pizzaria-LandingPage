@@ -9,14 +9,14 @@ import HorizontalDeal from "../HorizontalDeal.vue";
     class="bg-gray flex flex-col items-center px-6 py-10 gap-6 md:px-20"
   >
     <div
-      class="flex flex-col items-center gap-4 md:flex md:justify-between md:w-full"
+      class="flex flex-col items-center gap-4 md:flex-row md:justify-between md:w-full md:align-baseline"
     >
-      <h2 class="font-title text-black text-[2.5rem] uppercase font-bold">
+      <h2 class="font-title text-black text-[2.5rem] uppercase font-[500] md:text-[4rem] md:leading-[100%]">
         best deals!
       </h2>
       <OutlineButton
         buttonTxt="view all"
-        class="outline-2 outline-red outline bg-red text-red w-auto px-6 hover:text-white"
+        class="outline-2 text-[0.875rem] tracking-[2px] leading-[100%] outline-red outline bg-red text-red w-auto px-6 hover:text-white md:py-[0.9375rem] md:px-[1.4375rem]"
       />
     </div>
 
@@ -61,7 +61,7 @@ import HorizontalDeal from "../HorizontalDeal.vue";
         </div>
       </div>
       <div
-        class="md:flex md:justify-between md:w-full md:gap-16 md:h-[22.5rem]"
+        class="md:flex md:justify-between md:w-full md:gap-16 md:h-[22.5rem] w-full flex flex-col gap-6"
       >
         <HorizontalDeal
           dealTitle="Combo double max"

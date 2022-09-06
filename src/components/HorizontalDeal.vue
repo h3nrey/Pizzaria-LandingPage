@@ -13,12 +13,12 @@ console.log(props);
 <template>
   <div
     name="deal"
-    class="rounded-2xl w-[21.5rem] h-[12rem] overflow-hidden md:w-full md:h-full"
+    class="w-full rounded-2xl h-[12rem] overflow-hidden md:w-full md:h-full"
   >
     <div class="w-full h-full bg-home bg-center bg-cover flex justify-end">
       <div
         name="deal__details"
-        class="deal__details flex flex-col p-4 gap-3 items-end w-[60%] h-full rounded-2xl overflow-hidden relative text-end z-20 md:pt-10"
+        class="deal__details flex flex-col p-4  md:gap-3 items-end w-[60%] h-full rounded-2xl overflow-hidden relative text-end z-20 md:pt-10"
         :class="[`${dealAfterColor}  ${dealBeforeColor}`]"
       >
         <h2
