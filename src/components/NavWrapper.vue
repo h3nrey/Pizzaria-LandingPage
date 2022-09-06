@@ -5,7 +5,7 @@
     <router-link
       v-for="(link, index) in links"
       :to="link.anchor"
-      class="nav__link text-white font-mont font-semibold text-4xl md:text-base md:font-text md:font-normal md:hover:before:w-[120%] md:before:bg-red"
+      class="nav__link text-white font-mont font-semibold text-4xl md:text-base md:font-text md:font-normal md:hover:before:w-[120%] md:before:bg-red uppercase sm:before:hidden md:before:block"
       :class="{ active: link.activePage == true }"
       :key="index"
       @click="
@@ -43,9 +43,9 @@
 import { reactive } from "vue";
 let links = reactive([
   { anchor: "/", text: "Home", activePage: true },
-  { anchor: "/ourmenu", text: "OurMenu", activePage: false },
+  { anchor: "/ourmenu", text: "Our Menu", activePage: false },
+  { anchor: "/aboutus", text: "About", activePage: false },
   { anchor: "/contact", text: "Contact", activePage: false },
-  { anchor: "/aboutus", text: "AboutUs", activePage: false },
 ]);
 
 function toggleActive(key) {
