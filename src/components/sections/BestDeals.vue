@@ -61,7 +61,7 @@ import HorizontalDeal from "../HorizontalDeal.vue";
         </div>
       </div>
       <div
-        class="md:flex md:justify-between md:w-full md:gap-16 md:h-[22.5rem] w-full flex flex-col gap-6"
+        class="md:flex-row md:justify-between md:w-full md:gap-16 md:h-[22.5rem] w-full flex flex-col gap-6"
       >
         <HorizontalDeal
           dealTitle="Combo double max"
