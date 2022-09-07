@@ -33,7 +33,7 @@ const footerSections = [
       <div
         class="flex flex-col items-center gap-6 md:flex-col md:flex md:gap-6 md:items-start"
       >
-        <LogoWrapper color="text-red"/>
+        <LogoWrapper color="text-red" />
         <div name="social__row" class="flex gap-4">
           <a href="https://vuejs.org">
             <ph-instagram-logo :size="32" weight="fill" class="text-red" />
