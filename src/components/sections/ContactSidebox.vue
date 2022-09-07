@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-white px-6 py-12 gap-6 rounded-l-2xl md:py-[3rem] md:px-10"
+    class="flex flex-col bg-white px-6 py-12 gap-6 md:rounded-tl-2xl md:rounded-r-none rounded-t-2xl md:py-[3rem] md:px-10"
   >
     <div id="corporateoffice_container" class="gap-4 flex flex-col">
       <h2

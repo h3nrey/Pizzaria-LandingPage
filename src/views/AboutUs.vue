@@ -1,12 +1,12 @@
 <template>
   <div
-    class="home w-[100vw] before:absolute before:bg-history before:top-0 before:left-0 before:h-[47vh] before:w-[100vw] before:bg-center before:bg-cover before:z-[-1] before:brightness-50 md:before:h-[75vh] pt-20 md:py-0 md:mt-20"
+    class="home"
   >
-    <div class="flex flex-col align-center gap-6 px-6 mt-0">
+    <div class="flex flex-col align-center gap-6 py-16 md:py-20 px-6 mt-0 bg-black">
       <ViewTitle title="about" />
       <p class=" text-white font-text text-center md:px-[30%]">Dignissim sed suscipit mattis neque, in nibh blandit at nec in urna tristique ornare aliquam orci augue vestibulum dignissim vel aliquam.</p>
     </div>
-    <main class="pt-[10rem]">
+    <main class="pt-16 md:pt-20">
       <HistorySection />
       <div class="flex flex-col md:flex-row">
         <AboutMoreinfo sectionBg="bg-red" sectionColor="text-yellow" sectionHeader="sushi sun" sectionBigText="INCREDIBLE DISHES START HERE" :infos="infos.info1">

@@ -20,11 +20,11 @@ console.log(ViewTitle);
 </script>
 
 <template>
-  <ViewTitle title="our menu" />
-  <div class="w-full flex flex-col items-center justify-end">
-    <div class="flex justify-between w-full pb-20 md:p-0">
+  <div class="w-full flex flex-col items-center justify-end bg-black gap-16 py-16 px-6 pb-[6rem]">
+    <ViewTitle title="our menu" />
+    <div class="flex justify-between w-full md:px-10 md:pb-32">
       <div
-        class="flex justify-between w-full translate-y-[93%] md:translate-y-[10%]"
+        class="flex justify-between w-full"
       >
         <div
           v-for="(plate, index) in plates"
@@ -37,7 +37,7 @@ console.log(ViewTitle);
             v-smooth-scroll
           >
             <div
-              class="w-[6.5rem] h-[6.5rem] rounded-full bg-center bg-cover md:w-[19.5rem] md:h-[19.5rem]"
+              class="w-[6.5rem] h-[6.5rem] rounded-full bg-center bg-cover md:w-[15rem] md:h-[15rem]"
               :class="plate.img"
             ></div>
             <p class="font-title text-2xl font-semibold uppercase text-red">

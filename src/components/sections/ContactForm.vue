@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 flex flex-col gap-8 bg-[#fff] md:px-16 md:py-[3rem] rounded-r-2xl"
+    class="p-6 flex flex-col gap-8 bg-[#fff] md:px-16 md:py-[3rem] md:rounded-tr-2xl"
   >
     <div class="flex flex-col gap-4">
       <h2

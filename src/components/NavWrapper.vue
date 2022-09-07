@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-full flex flex-col items-center justify-center gap-10 md:w-full md:flex-row"
+    class="h-full flex flex-col items-center justify-center gap-10 md:flex-row"
   >
     <router-link
       v-for="(link, index) in links"

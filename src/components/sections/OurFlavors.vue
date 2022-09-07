@@ -7,16 +7,16 @@ const flavors = [{ title: "pasta" }, { title: "pizza" }, { title: "dessert" }];
 <template>
   <section
     id="ourflavors"
-    class="bg-white px-6 py-10 flex flex-col items-center text-center gap-[3.5rem]"
+    class="bg-white px-6 py-10 md:py-20 flex flex-col items-center text-center gap-[3.5rem]"
   >
     <div name="section__text" class="flex flex-col items-center gap-4">
       <h2 class="uppercase font-title text-red text-[1rem] font-bold">
         choose your flavor
       </h2>
-      <h3 class="text-black font-title text-[2.5rem] font-bold uppercase">
+      <h3 class="text-black font-title text-[2.5rem] md:text-[4rem] font-bold uppercase">
         FOOD THAT BRINGS PEOPLE TOGETHER!
       </h3>
-      <p class="text-black font-text">
+      <p class="text-black font-text md:px-[19%]">
         Cursus ultricies in maecenas pulvinar ultrices integer quam amet, semper
         dictumst sit interdum ut venenatis pellentesque nunc.
       </p>

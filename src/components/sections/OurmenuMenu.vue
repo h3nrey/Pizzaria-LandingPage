@@ -150,15 +150,15 @@ const menu = [
 </script>
 
 <template>
-  <div class="flex flex-col pt-32 pb-20 gap-16">
+  <div class="flex flex-col px-6 py-10 md:px-10 pb-20 gap-16 md:py-16">
     <div
       v-for="(flavor, index) in menu"
       :key="index"
       class="flex flex-col gap-10"
       :id="flavor.flavorTitle"
     >
-      <div class="md:flex justify-between items-end md:gap-[17rem]">
-        <h2 class="font-title font-bold uppercase text-red text-[4rem]">
+      <div class="md:flex-row md:justify-between md:items-end md:gap-[17rem] flex flex-col gap-4">
+        <h2 class="font-title font-bold uppercase text-red text-[4rem] leading-[100%]">
           {{ flavor.flavorTitle }}
         </h2>
         <p class="font-text md:text-right">{{ flavor.flavorDesc }}</p>

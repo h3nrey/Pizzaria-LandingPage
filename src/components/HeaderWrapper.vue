@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex align-center justify-between w-full px-6 pt-6 md:justify-center md:flex-col md:items-center md:gap-6"
+    class="flex align-center justify-between w-full px-6 py-6 md:gap-6 bg-black md:flex-row md:px-10"
   >
     <LogoWrapper />
     <NavWrapper class="sm:hidden md:flex" />

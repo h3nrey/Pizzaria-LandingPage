@@ -1,15 +1,15 @@
 <template>
   <div
-    class="home w-[100vw] before:absolute before:bg-home before:top-0 before:left-0 before:h-[100vh] before:w-[100vw] before:bg-center before:bg-cover before:z-[-1] before:brightness-50"
+    class="home bg-black"
   >
     <main class="flex flex-col align-center w-full">
       <section
         id="mainInfos"
-        class="text-white flex flex-col align-center gap-16 px-6 pb-10 md:pb-[10rem]"
+        class="text-white flex flex-col align-center gap-16 px-6 md:py-[6rem] py-16"
       >
         <div
           id="restaurant__description"
-          class="gap-6 flex flex-col align-center pt-10"
+          class="gap-6 flex flex-col align-center"
         >
           <ViewTitle title="authentic  italian pizzaria" />
           <p class="text-[1rem] font-semibold text-center md:px-[20%]">
