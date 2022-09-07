@@ -13,7 +13,9 @@ const flavors = [{ title: "pasta" }, { title: "pizza" }, { title: "dessert" }];
       <h2 class="uppercase font-title text-red text-[1rem] font-bold">
         choose your flavor
       </h2>
-      <h3 class="text-black font-title text-[2.5rem] md:text-[4rem] font-bold uppercase">
+      <h3
+        class="text-black font-title text-[2.5rem] md:text-[4rem] font-bold uppercase"
+      >
         FOOD THAT BRINGS PEOPLE TOGETHER!
       </h3>
       <p class="text-black font-text md:px-[19%]">

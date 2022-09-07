@@ -20,12 +20,12 @@ console.log(ViewTitle);
 </script>
 
 <template>
-  <div class="w-full flex flex-col items-center justify-end bg-black gap-16 py-16 px-6 pb-[6rem]">
+  <div
+    class="w-full flex flex-col items-center justify-end bg-black gap-16 py-16 px-6 pb-[6rem]"
+  >
     <ViewTitle title="our menu" />
     <div class="flex justify-between w-full md:px-10 md:pb-32">
-      <div
-        class="flex justify-between w-full"
-      >
+      <div class="flex justify-between w-full">
         <div
           v-for="(plate, index) in plates"
           :key="index"

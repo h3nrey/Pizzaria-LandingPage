@@ -2,7 +2,7 @@
   <header
     class="flex align-center justify-between w-full px-6 py-6 md:gap-6 bg-black md:flex-row md:px-10"
   >
-    <LogoWrapper />
+    <LogoWrapper color="text-white" />
     <NavWrapper class="sm:hidden md:flex" />
     <button class="sm:visible md:hidden">
       <ph-list
@@ -21,7 +21,7 @@
 
 <script setup>
 //imports
-import LogoWrapper from "./Logo.vue";
+import LogoWrapper from "./LogoWrapper.vue";
 import { PhList } from "phosphor-vue";
 import NavModal from "./NavModal.vue";
 import { ref } from "vue";

@@ -157,8 +157,12 @@ const menu = [
       class="flex flex-col gap-10"
       :id="flavor.flavorTitle"
     >
-      <div class="md:flex-row md:justify-between md:items-end md:gap-[17rem] flex flex-col gap-4">
-        <h2 class="font-title font-bold uppercase text-red text-[4rem] leading-[100%]">
+      <div
+        class="md:flex-row md:justify-between md:items-end md:gap-[17rem] flex flex-col gap-4"
+      >
+        <h2
+          class="font-title font-bold uppercase text-red text-[4rem] leading-[100%]"
+        >
           {{ flavor.flavorTitle }}
         </h2>
         <p class="font-text md:text-right">{{ flavor.flavorDesc }}</p>

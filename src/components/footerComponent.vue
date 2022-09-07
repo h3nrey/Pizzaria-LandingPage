@@ -1,6 +1,6 @@
 <script setup>
 import { PhInstagramLogo, PhYoutubeLogo, PhFacebookLogo } from "phosphor-vue";
-import Logo from "./Logo.vue";
+import LogoWrapper from "./LogoWrapper.vue";
 
 const footerSections = [
   {
@@ -25,7 +25,7 @@ const footerSections = [
 
 <template>
   <footer
-    class="bg-gray flex flex-col items-center text-center py-10 px-6 gap-6 md:items-start md:px-20 w-[100vw]"
+    class="bg-white flex flex-col items-center text-center py-10 px-6 gap-6 md:items-start md:px-20 w-[100vw]"
   >
     <div
       class="flex flex-col items-center gap-8 md:flex md:flex-row md:justify-between md:w-full"
@@ -33,7 +33,7 @@ const footerSections = [
       <div
         class="flex flex-col items-center gap-6 md:flex-col md:flex md:gap-6 md:items-start"
       >
-        <Logo />
+        <LogoWrapper color="text-red"/>
         <div name="social__row" class="flex gap-4">
           <a href="https://vuejs.org">
             <ph-instagram-logo :size="32" weight="fill" class="text-red" />
@@ -66,7 +66,7 @@ const footerSections = [
           </h2>
           <div class="flex flex-col">
             <router-link
-              to="/ourmenu"
+              to="/"
               class="font-text text-black text-base font-light capitalize underline md:no-underline md:hover:underline transition-all duration-300"
               v-for="(link, index) in section.sections"
               :key="index"

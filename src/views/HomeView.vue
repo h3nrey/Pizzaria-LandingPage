@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="home bg-black"
-  >
+  <div class="home bg-black">
     <main class="flex flex-col align-center w-full">
       <section
         id="mainInfos"

@@ -11,7 +11,9 @@ import HorizontalDeal from "../HorizontalDeal.vue";
     <div
       class="flex flex-col items-center gap-4 md:flex-row md:justify-between md:w-full md:align-baseline"
     >
-      <h2 class="font-title text-black text-[2.5rem] uppercase font-[500] md:text-[4rem] md:leading-[100%]">
+      <h2
+        class="font-title text-black text-[2.5rem] uppercase font-[500] md:text-[4rem] md:leading-[100%]"
+      >
         best deals!
       </h2>
       <OutlineButton

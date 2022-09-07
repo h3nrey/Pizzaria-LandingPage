@@ -27,7 +27,9 @@ const locations = [
     class="bg-red text-white flex flex-col items-center gap-8 px-6 py-16 md:gap-10 text-center md:p-20"
   >
     <div name="section__info" class="flex flex-col items-center">
-      <h2 class="font-title text-yellow text-[1rem] uppercase tracking-[2px] font-[500]">
+      <h2
+        class="font-title text-yellow text-[1rem] uppercase tracking-[2px] font-[500]"
+      >
         our location
       </h2>
       <p class="uppercase font-title font-bold text-[2.5rem] md:text-[4rem]">

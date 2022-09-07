@@ -1,8 +1,6 @@
 <template>
   <main>
-    <div
-      class="home"
-    >
+    <div class="home">
       <MainOurmenu />
       <OurmenuMenu />
     </div>
